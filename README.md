@@ -4,7 +4,7 @@ pipeline {
         stage ("pull") 
         {
             steps {
-                git 'https://github.com/Mohit-Verma555/sonar.git' 
+                git 'https://github.com/Mohit-Verma555/jenkins-code.git' 
             }
         }
         stage ("Build") 
