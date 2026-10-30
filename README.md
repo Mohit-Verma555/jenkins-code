@@ -20,8 +20,8 @@ pipeline {
                withSonarQubeEnv(installationName: 'sonar-install', credentialsId: 'sonar id2') {
 
                         sh ''' /opt/maven/bin/mvn clean verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar \
-                       -Dsonar.projectKey=deploy-1 \
-                       -Dsonar.projectName='deploy' \ '''
+                       -Dsonar.projectKey=deploy-1
+                       -Dsonar.projectName='deploy' '''
                          } 
             }
         }
